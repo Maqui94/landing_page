@@ -490,10 +490,16 @@ form{
     border-top: 1px solid #f3f3f3;
     line-height: 50px;
     height: 50px;
+    text-decoration: none;
 }
 .proyecto .back .link a{
-    color: f#f3f3f3;
+    color: snow;
+    text-decoration: none;
+   text-decoration-line:none;
+   text-decoration-color: none;
+   text-decoration-style: none;
 }
+
 .proyecto .back h3{
     font-size: 30px;
     margin-top: 20px;
