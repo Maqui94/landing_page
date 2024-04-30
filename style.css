@@ -13,6 +13,7 @@ body{
     background-attachment: fixed;
 
 }
+/* Página Principal */
 section{
     position: relative;
     width: 100%;
@@ -181,6 +182,8 @@ header .navbar li:hover{
     transition: 1.2s;
    
 }
+
+/* Página Contacto */
 .cajacontacto{
     width: 1000px;
     height: 550px;
@@ -286,3 +289,22 @@ form{
 #borrar:hover {
     background-color: #c82333;
 }
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    
+}
+.info{
+    text-align: center;  
+}
+.info ion-icon{
+    font-size: 60px;
+    color: violet;
+    padding-top: 25px;
+}
+.info ion-icon:hover{
+    transform: scale(1.6);
+    transition: 1.4s;
+}
+/* Sobre mi */
