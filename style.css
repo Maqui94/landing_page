@@ -27,7 +27,7 @@ header{
     top: 0px;
     left: 0px;
     width: 100%;
-    padding: 3.2% 3%;
+    padding: 2% 3%;
     display: flex;
     justify-content: space-between;
     margin-top: -1%;
@@ -41,9 +41,8 @@ header .logo{
     border-radius: 50px;
     padding: 0 0.4%;
     font-weight: 600;
-    padding-bottom: 1%;
-    margin-top: 1%;
-    
+     font-weight: bolder;
+     text-align: center;
     
     
 }
@@ -64,6 +63,7 @@ header .navbar li{
     list-style: none;
     margin-left: 30px;
     padding-top: 10px;
+   
 }
 header .navbar li a{
     text-decoration: none;
@@ -73,6 +73,7 @@ header .navbar li a{
     transition: 0.3;
     font-size: 1.3em;
     text-transform: uppercase;
+    
 }
 header .navbar li:hover{
     border-bottom: 5px solid rgb(226, 211, 0);
@@ -94,7 +95,6 @@ header .navbar li:hover{
     position: relative;
     max-width: 600px;
     text-align: center;
-    padding-top: 15px;
 }
 .contenido .tituloBox h2{
     font-size:4em;
@@ -116,8 +116,8 @@ header .navbar li:hover{
     color: brown;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 300;
-   padding-top: 10px;
-    padding-bottom: 40px;
+   padding-top: 10px; 
+     padding-bottom: 40px; 
     font-style: italic;
 
 }
@@ -144,7 +144,7 @@ header .navbar li:hover{
     justify-content: flex-end;
 }
 .contenido .imgBox img{
-    height: 82vh ;
+    height: 78vh ;
 }
 .copyright{
     position: absolute;
@@ -181,4 +181,108 @@ header .navbar li:hover{
     transition: 1.2s;
    
 }
+.cajacontacto{
+    width: 1000px;
+    height: 550px;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.cajacontacto div{
+    
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.cajacontacto div h1{
+    text-align: center;
+    font-size:50px;
+    color: brown;
+    text-shadow: 2px 1px 15px violet;
+    font-style: italic;
+    width: 100%;      
+}
+.cajacontacto div h1:hover{
+    color: violet;
+    text-shadow: 2px 1px 15px brown;
+    transform: scale(1.2);
+    transition: 1.3s;  
+}
+form{
+    color: violet;
+    font-size: 30px;
+}
+.privacidad{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+}
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
+.input-box label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input-box input,.input-box select,.input-box textarea {
+    flex: 2;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 5px;
+    color: violet;
+    font-size: 22px;    
+}
+.input-box input::placeholder,.input-box select::placeholder,.input-box textarea::placeholder{
+    color: green;
+    margin-right: 55px;
+}
+#opciones{
+    text-align: center;
+    color: green;
+}
+
+.privacidad input[type="checkbox"] {
+    transform: scale(0.6);
+    margin-right: 5px;
+}
+.input-box textarea {
+    height: 100px;
+    font-size: 14px;
+}
+#boton {
+    font-size: 0.7em;
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    background-color: #d9ff00; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-right: 10px;
+}
+
+#boton:hover {
+    background-color: #21b108; 
+}
+
+#borrar {
+    font-size: 0.7em; 
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    background-color: rgb(61, 26, 26); 
+    color: white; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+#borrar:hover {
+    background-color: #c82333;
+}
