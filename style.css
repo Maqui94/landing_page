@@ -516,3 +516,198 @@ form{
     transform: perspective(600px) rotateY(360deg);
 }
 /* cv */
+.cajacv{
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	display: grid;
+    flex-direction: row;
+    flex-wrap: wrap; 
+	place-items: center;
+	height: 38vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.overlay-contenido h1{
+    font-size: 5.25vmin;
+	text-align: center;
+	color: rgb(150, 2, 2);
+} 
+.overlay-contenido p{
+    font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: rgb(255, 0, 0);
+	margin-bottom: 1.5rem; 
+}
+.cajaapartado {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 86vmin;
+	height: 30vmin;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(
+			-50deg,
+			rgb(229, 233, 6),
+			#909204,
+			rgb(196, 199, 10),
+			rgb(46, 56, 2),
+			rgb(251, 255, 1),
+			#282901,
+			rgb(0, 0, 0)
+		)
+		1;
+	transition: 0.3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem 0.75rem;
+	background: black;
+	transition: 0.4s ease-in-out;
+	z-index: 1;
+}
+.overlay-contenido{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: 0.3rem 0 0 0.5rem;
+	border: 3px solid;
+	border-image: linear-gradient(
+			to bottom,
+			#aea724 5%,
+			rgb(0, 0, 0) 35% 65%,
+			#aea724 95%
+		)
+		0 0 0 100%;
+	transition: 0.3s ease-in-out 0.2s;
+	z-index: 1;
+}
+.imgcontenida {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 57vmin;
+	height: 100%;
+	background-size: cover;
+	transition: 0.3s ease-in-out;
+}
+.formacion{
+    background-image: url(img/conocimientos.jpg);
+}
+.experiencia{
+    background-image: url(img/educador-social.png);
+}
+.skills{
+    background-image: url(img/skills2.jpg);
+}
+.datosextra{
+    background-image: url(img/scout1.jpg);
+}
+
+.imgtexto {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+    
+}
+
+.circulos {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: 0.3s ease-in-out 0.3s;
+}
+.circulo {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: 0.3s ease-in-out 0.3s;
+}
+.contenidotexto {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
+	overflow-y: scroll;
+}
+.cajaapartado:hover .overlay{
+    transform: translateX(-57vmin);
+}
+.cajaapartado:hover .imgcontenida{
+    width: 30vmin;
+}
+.cajaapartado:hover .overlay-contenido{
+    border: none;
+	transition-delay: 0.2s;
+	transform: translateX(57vmin);
+}
+.cajaapartado:hover .circulos{
+    transform: translateX(1rem);
+}
+.cajaapartado:hover .circulos .circulo{
+    background: white;
+}
+.animacion{
+    animation-duration: 0,7s;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+}
+
+@media screen and (min-width: 1024px) {
+    /* Agrega aquí tus estilos específicos para pantallas grandes */
+    .contenido {
+        flex-direction: row;
+    }
+    .contenido .tituloBox {
+        max-width: 50%;
+    }
+    .contenido .imgBox {
+        max-width: 50%;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .contenido .tituloBox h2 {
+        font-size: 3em;
+    }
+    .contenido .tituloBox p {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+    .contenido {
+        flex-direction: column;
+    }
+    .contenido .tituloBox h2 {
+        font-size: 2.5em;
+    }
+    .contenido .tituloBox p {
+        font-size: 0.8em;
+    }
+}
